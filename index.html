@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavandería</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Administración de Pedidos</h1>
+    <form id="pedidoForm">
+        <input type="text" id="nombre" placeholder="Nombre" required>
+        <input type="tel" id="telefono" placeholder="Teléfono" required>
+        <input type="text" id="producto" placeholder="Producto" required>
+        <button type="submit">Registrar Pedido</button>
+    </form>
+
+    <h2>Buscar Pedido</h2>
+    <input type="text" id="buscar" placeholder="Buscar por nombre o teléfono">
+    <button onclick="buscarPedido()">Buscar</button>
+
+    <h2>Lista de Pedidos</h2>
+    <table id="tablaPedidos">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Teléfono</th>
+                <th>Producto</th>
+                <th>Ingreso</th>
+                <th>Retiro</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
